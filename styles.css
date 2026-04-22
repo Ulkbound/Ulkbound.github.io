@@ -204,3 +204,9 @@ footer img {
     margin-top: 2em;
     max-width: 100px;
 }
+
+@media (max-width: 900px) {
+    .pillar {
+        display: none;
+    }
+}
