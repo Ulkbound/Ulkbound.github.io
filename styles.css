@@ -162,19 +162,7 @@ article h2 {
 }
 
 article p {
-      line-height: 1.5;
-}
-
-aside {
-    flex: 1;
-    background: #efe4c9;
-    padding: 10px;
-    border: 1px solid #c2a878;
-}
-
-aside p {
-    font-size: 0.9em;
-    font-style: italic;
+    line-height: 1.5;
 }
 
 .dropcap::first-letter {
