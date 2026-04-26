@@ -39,6 +39,7 @@
 .connections {
     margin: 0 auto;
     max-width: 600px;
+    text-align: center;
 }
 
 .connections p {
@@ -50,6 +51,13 @@
     display: block;
 }
 
+.connections ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    line-height: 1.5em;
+}
+
 .column {
   flex: 1;
 }
@@ -58,6 +66,13 @@
   width: 100%;
   height: auto;
   border: 1px solid #c2a878;
+}
+
+.column ol {
+    margin: 0;
+    padding-left: 0;
+    list-style-position: inside;
+    line-height: 1.5;
 }
 
 header {
