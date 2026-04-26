@@ -12,6 +12,7 @@
 
 .container {
     max-width: 900px;
+    min-height: 100vh;
     margin: auto;
     padding: 30px;
     background: #fdf6e3;
@@ -159,7 +160,7 @@ a:hover {
 main {
     display: flex;
     gap: 20px;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 article {
