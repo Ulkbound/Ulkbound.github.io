@@ -1,4 +1,4 @@
-body {
+﻿body {
     margin: 0;
     font-family: "Garamond", "Times New Roman", serif;
     background-color: #f4ecd8;
@@ -91,21 +91,22 @@ header h1 {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 100px;
+    width: 120px;
     z-index: 2;
-    background-size: cover;
-    background-repeat: no-repeat;
     pointer-events: none;
+
+    background-image: url('img/pillar.png');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-position: top center;
 }
 
 .pillar-left {
-    left: calc(50% - 450px - 100px);
-    background-image: url('img/pillar.png');
+    right: calc(50% + 450px);
 }
 
 .pillar-right {
     left: calc(50% + 450px);
-    background-image: url('img/pillar.png');
 }
 
 nav ul {
@@ -162,7 +163,19 @@ article h2 {
 }
 
 article p {
-    line-height: 1.5;
+      line-height: 1.5;
+}
+
+aside {
+    flex: 1;
+    background: #efe4c9;
+    padding: 10px;
+    border: 1px solid #c2a878;
+}
+
+aside p {
+    font-size: 0.9em;
+    font-style: italic;
 }
 
 .dropcap::first-letter {
@@ -187,8 +200,21 @@ footer img {
     max-width: 100px;
 }
 
+.bottom-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    pointer-events: none;
+}
+
 @media (max-width: 1000px) {
     .pillar {
+        display: none;
+    }
+
+    .bottom-overlay {
         display: none;
     }
 }
